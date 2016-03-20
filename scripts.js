@@ -1,5 +1,5 @@
-console.log("inicio de programa");
-alert("Hola Krito =)");
-document.write("<h1>Hola Java Script</p>");
-alert("Hola Java Script");
+Console.log("inicio de programa");
+alert("Prueba de errores funcionando")
+Document.write("<h1>Hola Java Script<p>");
 console.log("Fin de programa");
+alert(Hola Java Script");
