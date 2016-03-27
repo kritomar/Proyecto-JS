@@ -23,7 +23,7 @@ alert("Numero aleatorio es:" + alea);
 
 /*CONDICION MULTIPLE*/
 
-
+/*Adivinar el numero aleatorio. entre 1 y 10. uso de condiciones para comparar si el numero ingresado es mayor o menor al aleatorio*/
 var min = 1;
     var max = 10;
     var aleatorio = Math.floor(Math.random() * max - min + 1) + min;
