@@ -65,6 +65,7 @@ console.log("fin de programa");
 
 //DESAFIO
 
+/*
 function numeroAlAzarEntreLimites (limiteInferior, limiteSuperior)
 {
 
@@ -83,6 +84,8 @@ var limiteInferior=prompt("Ingrese limite inferior");
 alert ("Su numero al azar es:"+ numeroAlAzarEntreLimites(parseInt(limiteInferior), parseInt(limiteSuperior)));
 
 // WHILE LOOP
+//el contador nos va a mostrar 10 numeros aleatorios
+
 var contador =0;
 while(contador<10)
 {
@@ -91,3 +94,33 @@ while(contador<10)
 	document.write(randomico + "");
 	contador++;
 }
+*/
+
+
+
+function alea(limite){
+	var numero = Math.floor(Math.random()*limite)+1;
+		return numero;
+}
+
+var numAzar=alea(100);
+alert("El numero aleatorio es"+ numAzar);
+	
+var contador=0;
+
+while(true)
+	{
+		contador++;
+		var randomico=alea(100);
+	
+		if(randomico === numAzar)
+			{
+				
+				alert("su numero adivinado es: "+parseInt(randomico));
+				break;
+			}
+			
+	}
+	
+
+alert("total de intentos: "+contador);
