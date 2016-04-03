@@ -13,6 +13,7 @@ function print(html)
 {
 	document.write(html);
 }
+
 var busqueda;
 var productos = [];
 productos.push("azucar");
@@ -25,6 +26,8 @@ productos.push("jugos");
 
 while(true)
 {
+	
+	//busqueda = busqueda.TolowerCase();//identifica minusculas y mayusculas
 	busqueda= prompt("Ingrese el producto a buscar:");
 	if(busqueda === "q")
 	{

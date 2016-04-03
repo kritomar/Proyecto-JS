@@ -24,7 +24,9 @@ var cancelado= ordenPedido.pop();
 */
 
 
-/*
+/*/////////////////////////// enlistar canciones
+
+
 function printList(list)
 {
 	var listHTML= '<ol>';
@@ -49,4 +51,33 @@ playList.push("The girl from ipanema");
 playList.push("Soneros de Bailadores");
 
 printList (playList);
+
+
+
 */
+//enlistar cacniones y autores
+
+function printListReproduccion(listaCanciones)
+{
+	var listHTML= '<ol>';
+	for (var i=0; i < listaCanciones; i += 1)
+	{
+		listHTML += '<li> Tema: ' + listaCanciones [i][0] + ' . Por: '+ listaCanciones[i][1] + '</li>';
+	}
+	listHTML += '</ol>';
+	print(listHTML);
+}
+
+function print(html)
+{
+	document.write(html);
+}
+
+var playList = [];
+playList.push(["strangers in the night","Frank Sinatra"]);
+playList.push(["Mi conejito era tan bandidon","Los conquistadores"]);
+playList.push(["Borro cassette", "Maluma"]);
+playList.push(["The girl from ipanema","Austrud Gilberto"]);
+playList.push(["Soneros de Bailadores","Cheo Feliciano"]);
+
+printListReproduccion(playList);
